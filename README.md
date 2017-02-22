@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: If we for example find a naked twin in a row then we can eliminate those values from all other members of that row because these are the only two boxes that contain those two digits which means that all other peers in that unit cannot have that as a value.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: We have a constraint that if a single value appears in the diagonal then all other peers in that diagonal cannot have that value as a possible answers. So we implement this logic in the eliminate method in order to propagate this constraint to all the members of the both diagonals.
 
 ### Install
 
